@@ -1,5 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+    <style>
+        #labelname{
+            background-color: grey;
+        }
+        #pName{
+            background-color: indigo;
+        }
+        #pTele{
+            background-color: lavender;
+        }
+        #pInternet{
+            background-color: khaki;
+        }
+        #pHardware{
+            background-color: honeydew;
+        }
+        #lblja:hover{
+            background-color: green;
+        }
+        #lblnein:hover{
+            background-color: red;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,32 +31,44 @@
 <body>
     <h2>Corona-Checkliste</h2><br>
     <form>
-        <label for="Nname">Name:</label>
-        <input type="text" id="Nname" name="Nname"><br>
-        <label for="Vname">Vorname:</label>
-        <input type="text" id="Vname" name="Vname"><br>
-        <label for="Tele">Telefonnummer:</label>
-        <input type="text" id="Tele" name="Tele"><br>
-        <label for="Internet">Internet vorhanden?</label>
-        <input type="radio" id="ja" name="Internet" value="ja" checked>
-        <label for="ja">Ja</label>
-        <input type="radio" id="nein" name="Internet" value="nein">
-        <label for="nein">Nein</label><br>
-        <label>Welche Hardware ist vorhanden:</label><br>
-        <input type="checkbox" id="headset" name="headset" value="headset">
-        <label for="headset">Headset</label><br>
-        <input type="checkbox" id="laptop" name="laptop" value="laptop">
-        <label for="laptop">Laptop</label><br>
-        <input type="checkbox" id="mikrofon" name="mikrofon" value="mikrofon">
-        <label for="mikrofon">Mikrofon</label><br>
-        <label for="TeleAus">Telefonnummer des Ausbilders:</label>
-        <input type="text" id="TeleAus" name="TeleAus"><br>
-        <label for="TelePsychD">Telefonnummer des psychlogischen Dienstes:</label>
-        <input type="text" id="TelePsychD" name="TelePsychD"><br>
-        <label for="TeleBetr">Telefonnummer des Betreuers:</label>
-        <input type="text" id="TeleBetr" name="TeleBetr"><br>
-        <label for="TeleMng">Telefonnummer des Fallmanagers:</label>
-        <input type="text" id="TeleMng" name="TeleMng"><br>
+        <p id="pName">
+            <label for="Nname" id="labelname">Name:</label>
+            <input type="text" id="Nname" name="Nname"><br>
+            <label for="Vname" id="labelname">Vorname:</label>
+            <input type="text" id="Vname" name="Vname">
+        </p>
+        <p id="pTele">
+            <label for="Tele">Telefonnummer:</label>
+            <input type="text" id="Tele" name="Tele"><br>
+
+            <label for="TeleAus">Telefonnummer des Ausbilders:</label>
+            <input type="text" id="TeleAus" name="TeleAus"><br>
+
+            <label for="TelePsychD">Telefonnummer des psychlogischen Dienstes:</label>
+            <input type="text" id="TelePsychD" name="TelePsychD"><br>
+
+            <label for="TeleBetr">Telefonnummer des Betreuers:</label>
+            <input type="text" id="TeleBetr" name="TeleBetr"><br>
+
+            <label for="TeleMng">Telefonnummer des Fallmanagers:</label>
+            <input type="text" id="TeleMng" name="TeleMng"><br>
+        </p>
+        <p id="pInternet">
+            <label for="Internet">Internet vorhanden?</label>
+            <input type="radio" id="ja" name="Internet" value="ja" checked>
+            <label for="ja" id="lblja">Ja</label>
+            <input type="radio" id="nein" name="Internet" value="nein">
+            <label for="nein" id="lblnein">Nein</label>
+        </p>
+        <p id="pHardware">
+            <label>Welche Hardware ist vorhanden:</label><br>
+            <input type="checkbox" id="headset" name="headset" value="headset">
+            <label for="headset">Headset</label><br>
+            <input type="checkbox" id="laptop" name="laptop" value="laptop">
+            <label for="laptop">Laptop</label><br>
+            <input type="checkbox" id="mikrofon" name="mikrofon" value="mikrofon">
+            <label for="mikrofon">Mikrofon</label><br>
+        </p>
         <input type="submit" value="Einreichen">
     </form>
 </body>

@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.header{
+    padding: 5px;
+    
+}
+.navigation{
+    position: sticky;
+    top: 0px;
+    padding: auto;
+    background-color: lightgray;
+}
+.body{
+    clear: both;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+.left{
+    float: left;
+    background-color: gray;
+}
+.main{
+    text-align: left;
+    float: left;
+    padding: 10px;
+}
+.right{
+    float: left;
+    background-color: gray;
+}
+.footer{
+    background-color: lightgray;
+}

@@ -1,5 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Corona-Checkliste</title>
     <style>
         #labelname:hover{
             background-color: grey;
@@ -23,53 +29,71 @@
             background-color: red;
         }
     </style>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corona-Checkliste</title>
 </head>
 <body>
-    <h2>Corona-Checkliste</h2>
-    <form>
-        <p id="pName">
-            <label for="Nname" id="labelname">Name:</label>
-            <input type="text" id="Nname" name="Nname"><br>
-            <label for="Vname" id="labelname">Vorname:</label>
-            <input type="text" id="Vname" name="Vname">
-        </p>
-        <p id="pTele">
-            <label for="Tele">Telefonnummer:</label>
-            <input type="text" id="Tele" name="Tele"><br>
+    <div class="header">
+        <h1>Hennings Website</h1>
+    </div>
 
-            <label for="TeleAus">Telefonnummer des Ausbilders:</label>
-            <input type="text" id="TeleAus" name="TeleAus"><br>
+        <div class="navigation">
+            <a href="index.html">Hauptseite</a>
+            <a href="anschreiben.html">Anschreiben</a>
+            <a href="lebenslauf.html">Lebenslauf</a>
+            <a href="stundenplan.html">Stundenplan</a>
+            <a href="checkliste.html">Corona Checkliste</a>
+        </div>
+    <div class="body">
+        <div class="left"></div>
+        <div class="main">    
+            <h2>Corona-Checkliste</h2>
+            <form>
+                <p id="pName">
+                    <label for="Nname" id="labelname">Name:</label>
+                    <input type="text" id="Nname" name="Nname"><br>
+                    <label for="Vname" id="labelname">Vorname:</label>
+                    <input type="text" id="Vname" name="Vname">
+                </p>
+                <p id="pTele">
+                    <label for="Tele">Telefonnummer:</label>
+                    <input type="text" id="Tele" name="Tele"><br>
 
-            <label for="TelePsychD">Telefonnummer des psychlogischen Dienstes:</label>
-            <input type="text" id="TelePsychD" name="TelePsychD"><br>
+                    <label for="TeleAus">Telefonnummer des Ausbilders:</label>
+                    <input type="text" id="TeleAus" name="TeleAus"><br>
 
-            <label for="TeleBetr">Telefonnummer des Betreuers:</label>
-            <input type="text" id="TeleBetr" name="TeleBetr"><br>
+                    <label for="TelePsychD">Telefonnummer des psychlogischen Dienstes:</label>
+                    <input type="text" id="TelePsychD" name="TelePsychD"><br>
 
-            <label for="TeleMng">Telefonnummer des Fallmanagers:</label>
-            <input type="text" id="TeleMng" name="TeleMng"><br>
-        </p>
-        <p id="pInternet">
-            <label for="Internet">Internet vorhanden?</label>
-            <input type="radio" id="ja" name="Internet" value="ja" checked>
-            <label for="ja" id="lblja">Ja</label>
-            <input type="radio" id="nein" name="Internet" value="nein">
-            <label for="nein" id="lblnein">Nein</label>
-        </p>
-        <p id="pHardware">
-            <label>Welche Hardware ist vorhanden:</label><br>
-            <input type="checkbox" id="headset" name="headset" value="headset">
-            <label for="headset">Headset</label><br>
-            <input type="checkbox" id="laptop" name="laptop" value="laptop">
-            <label for="laptop">Laptop</label><br>
-            <input type="checkbox" id="mikrofon" name="mikrofon" value="mikrofon">
-            <label for="mikrofon">Mikrofon</label><br>
-        </p>
-        <input type="submit" value="Einreichen">
-    </form>
+                    <label for="TeleBetr">Telefonnummer des Betreuers:</label>
+                    <input type="text" id="TeleBetr" name="TeleBetr"><br>
+
+                    <label for="TeleMng">Telefonnummer des Fallmanagers:</label>
+                    <input type="text" id="TeleMng" name="TeleMng"><br>
+                </p>
+                <p id="pInternet">
+                    <label for="Internet">Internet vorhanden?</label>
+                    <input type="radio" id="ja" name="Internet" value="ja" checked>
+                    <label for="ja" id="lblja">Ja</label>
+                    <input type="radio" id="nein" name="Internet" value="nein">
+                    <label for="nein" id="lblnein">Nein</label>
+                </p>
+                <p id="pHardware">
+                    <label>Welche Hardware ist vorhanden:</label><br>
+                    <input type="checkbox" id="headset" name="headset" value="headset">
+                    <label for="headset">Headset</label><br>
+                    <input type="checkbox" id="laptop" name="laptop" value="laptop">
+                    <label for="laptop">Laptop</label><br>
+                    <input type="checkbox" id="mikrofon" name="mikrofon" value="mikrofon">
+                    <label for="mikrofon">Mikrofon</label><br>
+                </p>
+                <p>
+                    <input type="submit" value="Einreichen">
+                </p>            
+            </form>
+        </div>
+        <div class="right"></div>
+    </div>
+    <div class="footer">
+        <a href="impressum.html">Impressum</a>
+    </div>
 </body>
 </html>
